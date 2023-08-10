@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Expoente</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(60, 160, 199);
+            display: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: crimson;
+        }
+
+        .code-box {
+            width: 700px;
+            height: 900px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            display: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Expoente</h1>
+    <div id="container">
+        <div class="input-container">
+            <label for="base">Digite a base:</label>
+            <input type="number" id="base" step="0.01">
+        </div>
+        <div class="input-container">
+            <label for="expoente">Digite o expoente:</label>
+            <input type="number" id="expoente" step="1">
+        </div>
+        <button id="calcular">Calcular</button>
+        <div id="resultado">Resultado:</div><br>
+
+    
+    </div>
+    <script src="script.js"></script>
+    </script>
+    <img src="tela final.PNG" alt="Print tela visualg"><br>
+    <img src="js.PNG" alt="Js"><br>
+
+    <div class="code-box">
+        <pre>
+            <code>
+                ALG 67
+                var
+                base,expoente,resultado,fator : real
+                inicio
+                escreva("Digite a base: ")
+                leia(base)
+                escreva("Digite o expoente: ")
+                leia(expoente)
+                resultado <- 1
+                fator <- base
+
+                se expoente = 0 entao
+                    resultado <- 1
+                senao
+                    se expoente > 0 entao
+                        enquanto expoente > 0 faca
+                            resultado <- resultado * fator
+                            expoente <- expoente - 1
+                        fimenquanto
+                    senao
+                        enquanto expoente < 0 faca
+                            resultado <- resultado / fator
+                            expoente <- expoente + 1
+                        fimenquanto
+                    fimse
+                fimse
+                escreva("O resultado de ", base, " elevado a ", expoente, " é ", resultado)
+                fimalgoritmo
+            </code>
+        </pre>
+    </div>
+</body>
+</html>
