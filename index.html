@@ -103,22 +103,23 @@
                 fator <- base
 
                 se expoente = 0 entao
-                    resultado <- 1
+                resultado <- 1
                 senao
-                    se expoente > 0 entao
-                        enquanto expoente > 0 faca
-                            resultado <- resultado * fator
-                            expoente <- expoente - 1
-                        fimenquanto
-                    senao
-                        enquanto expoente < 0 faca
-                            resultado <- resultado / fator
-                            expoente <- expoente + 1
-                        fimenquanto
-                    fimse
+                se expoente > 0 entao
+                enquanto expoente > 0 faca
+                resultado <- resultado * fator
+                expoente <- expoente - 1
+                 fimenquanto
+                senao
+                enquanto expoente < 0 faca
+                resultado <- resultado / fator
+                expoente <- expoente + 1
+                fimenquanto
+                fimse
                 fimse
                 escreva("O resultado de ", base, " elevado a ", expoente, " é ", resultado)
                 fimalgoritmo
+
             </code>
         </pre>
     </div>
