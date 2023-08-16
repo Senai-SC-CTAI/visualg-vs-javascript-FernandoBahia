@@ -8,13 +8,17 @@
     
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: rgb(60, 160, 199);
-            display: center;
-            flex-direction: center;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            max-width: 100%;
+            max-height: 100%;
+            font-family: Consolas, monospace;
+            margin: 20px;
+            background: linear-gradient(to bottom, #5ff15f, #ffffff);
+            background-size: 300% 230%;
+            
         }
 
         h1 {
@@ -36,10 +40,11 @@
             width: 100%;
             padding: 5px;
             margin-top: 5px;
+            
         }
 
         button {
-            width: 100%;
+            width: 107%;
             padding: 10px;
             margin-top: 10px;
         }
@@ -68,6 +73,7 @@
             margin-top: 20px;
         }
     </style>
+
 </head>
 <body>
     <h1>Calculadora de Expoente</h1>
@@ -81,14 +87,14 @@
             <input type="number" id="expoente" step="1">
         </div>
         <button id="calcular">Calcular</button>
-        <div id="resultado">Resultado:</div><br>
+        <div id="resultado"></div><br><br><br>
 
     
     </div>
     <script src="script.js"></script>
     </script>
     <img src="tela final.PNG" alt="Print tela visualg"><br><br>
-    <img src="js.PNG" alt="Js"><br><br>
+    <img src="js.PNG" alt="Js"><br><br><br>
 
     <div class="code-box">
         <pre>
@@ -132,3 +138,4 @@
     </div>
 </body>
 </html>
+
